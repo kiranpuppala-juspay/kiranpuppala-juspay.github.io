@@ -20,8 +20,9 @@ function generateLinks(){
 
     var sandbox = "https://sandbox.juspay.in/pay/sdk-response/apps/"+ package + "?app_name=" + encodeURI(app_name);
     var api = "https://api.juspay.in/pay/sdk-response/apps/"+ package + "?app_name=" + encodeURI(app_name);
+    var common = "juspay://"+ package;
 
-    output.value = sandbox + "\n" + api;
+    output.value = sandbox + "\n" + api + "\n" + common;
 }
 
 function copyit(){
